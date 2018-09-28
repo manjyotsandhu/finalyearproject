@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context="com.example.manjyot.app1.RegisterActivity">
+
+    <!-- Top bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Top bar -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:padding="30dp"
+                android:text="@string/register_title"
+                android:textColor="@android:color/white"
+                android:textSize="25sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:padding="30dp"
+                android:tint="@android:color/white"
+                app:srcCompat="@drawable/accountcircleicon" />
+        </RelativeLayout>
+
+        <!-- User entry -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/register_name_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:paddingBottom="20dp"
+                android:hint="@string/register_name"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColor="@color/colorDarkGrey" />
+
+            <EditText
+                android:id="@+id/register_email_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:paddingBottom="20dp"
+                android:hint="@string/register_email"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:textColor="@color/colorDarkGrey" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/greyBackground"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/close_register_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:padding="20dp"
+            android:background="@android:color/transparent"
+            android:tint="@color/colorDarkGrey"
+            app:srcCompat="@drawable/backarrow" />
+
+
+        <Button
+            android:id="@+id/next_register_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:padding="20dp"
+            android:background="@android:color/transparent"
+            android:drawableEnd="@drawable/forwardarrow"
+            android:drawableRight="@drawable/forwardarrow"
+            android:drawableTint="@color/colorDarkGrey"
+            android:text="@string/register_next" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

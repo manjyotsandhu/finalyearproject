@@ -1,0 +1,29 @@
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
+    <header
+        android:fragment="com.example.manjyot.app1.SettingsActivity$SettingsFragmentAccount"
+        android:title="@string/pref_account"
+        android:icon="@drawable/accountcircleicon"></header>
+
+    <header
+        android:fragment="com.example.manjyot.app1.SettingsActivity$SettingsFragmentNotifications"
+        android:title="@string/pref_notifications"
+        android:icon="@drawable/notificationicon"></header>
+
+    <header
+        android:fragment="com.example.manjyot.app1.SettingsActivity$SettingsFragmentHelp"
+        android:title="@string/pref_help"
+        android:summary="@string/pref_help_summary"
+        android:icon="@drawable/helpicon"></header>
+
+    <header
+        android:fragment="com.example.manjyot.app1.SettingsActivity$SettingsFragmentAbout"
+        android:title="@string/pref_about"
+        android:icon="@drawable/abouticon"></header>
+
+    <header
+        android:fragment="com.example.manjyot.app1.SettingsActivity$SettingsFragmentLogout"
+        android:id="@+id/settings_header_logout"
+        android:title="@string/pref_logout"
+        android:summary="@string/pref_logout_summary"
+        android:icon="@drawable/exiticon"></header>
+</preference-headers>

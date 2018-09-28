@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/pref_acc_title_personal">
+        <EditTextPreference
+            android:capitalize="words"
+            android:defaultValue="@string/pref_acc_name_placeholder"
+            android:inputType="textCapWords"
+            android:key="account_name"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:summary="@string/pref_acc_name_default"
+            android:title="@string/pref_acc_name" />
+
+        <EditTextPreference
+            android:capitalize="words"
+            android:defaultValue="@string/pref_acc_email_placeholder"
+            android:inputType="textEmailAddress"
+            android:key="account_email"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:summary="@string/pref_acc_email_default"
+            android:title="@string/pref_acc_email" />
+
+        <EditTextPreference
+            android:capitalize="words"
+            android:defaultValue="@string/pref_acc_enter_pass"
+            android:inputType="textPassword"
+            android:key="account_pass"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/pref_acc_pass" />
+    </PreferenceCategory>
+
+
+    <PreferenceCategory android:title="@string/pref_acc_title_emails">
+        <SwitchPreference
+            android:key="account_emailsubstatus"
+            android:defaultValue="true"
+            android:summary="@string/pref_sub_email_allow_status"
+            android:title="@string/pref_sub_email_allow" />
+
+        <MultiSelectListPreference
+            android:defaultValue="@array/empty_array"
+            android:entries="@array/emailSubEntries"
+            android:entryValues="@array/emailSubValues"
+            android:key="account_emailsublist"
+            android:persistent="true"
+            android:summary="@string/pref_sub_email_summary"
+            android:title="@string/pref_sub_email" />
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

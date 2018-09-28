@@ -1,0 +1,31 @@
+<resources>
+    <string-array name="priorityArray">
+        <item>Low</item>
+        <item>Medium</item>
+        <item>High</item>
+    </string-array>
+
+    <string-array name="emailSubEntries">
+        <item>Newsletter</item>
+        <item>Tips and tricks</item>
+        <item>Business offers</item>
+    </string-array>
+
+    <string-array name="emailSubValues">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="iconEntries">
+        <item>Choose icon</item>
+        <item>Remove icon</item>
+    </string-array>
+
+    <string-array name="iconValues">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <string-array name="empty_array"/>
+</resources>

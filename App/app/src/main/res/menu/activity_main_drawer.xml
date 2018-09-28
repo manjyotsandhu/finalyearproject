@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/nav_top_section"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_alltasks"
+            android:icon="@drawable/homeicon"
+            android:title="@string/nav_tasks_title"
+            android:checked="true"/>
+        <item
+            android:id="@+id/nav_overduetasks"
+            android:icon="@drawable/overduetimeicon"
+            android:title="@string/nav_overdue_title" />
+        <item
+            android:id="@+id/nav_todaytasks"
+            android:icon="@drawable/todayicon"
+            android:title="@string/nav_today_title" />
+        <item
+            android:id="@+id/nav_tomorrowtasks"
+            android:icon="@drawable/calendaricon"
+            android:title="@string/nav_tomorrow_title" />
+        <item
+            android:id="@+id/nav_completetasks"
+            android:icon="@drawable/tickicon"
+            android:title="@string/nav_complete_title" />
+    </group>
+
+    <group
+        android:id="@+id/nav_bottom_section"
+        android:checkableBehavior="none">
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/settingsicon"
+                android:title="@string/nav_settings_title" />
+            <item
+                android:id="@+id/nav_rateus_title"
+                android:icon="@drawable/hearticon"
+                android:title="@string/nav_rateus_title" />
+    </group>
+
+</menu>

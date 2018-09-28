@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_search"
+        android:orderInCategory="100"
+        android:title="Search"/>
+    <item
+        android:id="@+id/action_sortBy"
+        android:orderInCategory="101"
+        android:title="@string/action_sortBy"/>
+
+    <item android:id="@+id/action_filterBy"
+        android:orderInCategory="102"
+        android:title="@string/action_filterBy">
+
+    </item>
+</menu>

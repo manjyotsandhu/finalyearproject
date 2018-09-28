@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/pref_about_social">
+    <Preference
+        android:selectable="false"
+        android:enabled="true"
+        android:title="@string/pref_about_google"/>
+        <Preference
+            android:selectable="false"
+            android:enabled="true"
+            android:title="@string/pref_about_feedback"
+            android:summary="@string/pref_about_feedback_summary"/>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/pref_about_legal">
+
+        <Preference
+            android:enabled="true"
+            android:selectable="false"
+            android:summary="@string/pref_about_desc" />
+
+        <Preference
+            android:enabled="true"
+            android:selectable="false"
+            android:summary="@string/pref_about_version_no"
+            android:title="@string/pref_about_version" />
+
+        <Preference
+            android:enabled="true"
+            android:selectable="false"
+            android:title="@string/pref_about_policy" />
+
+        <Preference
+            android:enabled="true"
+            android:selectable="false"
+            android:title="@string/pref_about_terms" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
